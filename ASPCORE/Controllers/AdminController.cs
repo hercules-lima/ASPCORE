@@ -21,5 +21,13 @@ namespace ASPCORE.Controllers
             var nome = Request.Query["nome"];
             return Content("Aprendendo ASP.NET Core na School of net!" + nome);
         }
+
+        [HttpGet("view")]
+        public IActionResult visualizar()
+        {
+            ViewData["helloworld"] = true;
+            ViewData["nome"] = "Victor";
+            return View("nada");
+        }
     }
 }
