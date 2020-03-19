@@ -108,3 +108,4 @@ C:\Users\hercu\source\repos\ASPCORE\ASPCORE\bin\Debug\netcoreapp3.1\zh-Hant\Micr
 C:\Users\hercu\source\repos\ASPCORE\ASPCORE\obj\Debug\netcoreapp3.1\ASPCORE.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\hercu\source\repos\ASPCORE\ASPCORE\obj\Debug\netcoreapp3.1\Razor\Views\Admin\visualizar.cshtml.g.cs
 C:\Users\hercu\source\repos\ASPCORE\ASPCORE\obj\Debug\netcoreapp3.1\Razor\Views\Admin\nada.cshtml.g.cs
+C:\Users\hercu\source\repos\ASPCORE\ASPCORE\obj\Debug\netcoreapp3.1\Razor\Views\Admin\form.cshtml.g.cs

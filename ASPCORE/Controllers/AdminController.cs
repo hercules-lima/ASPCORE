@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,22 @@ namespace ASPCORE.Controllers
             ViewData["helloworld"] = true;
             ViewData["nome"] = "Victor";
             return View("nada");
+        }
+
+        [HttpGet("form")]
+        public IActionResult form()
+        {
+            return View();
+        }
+
+        [HttpPost("dados")]
+        public IActionResult dados()
+        {
+            StringValues nome;
+            StringValues email;
+            Request.Form.TryGetValue("nome", out nome);
+            Request.Form.TryGetValue("email", out email);
+            return Content("Formulário Enviado!" + " " + nome + " " + email);
         }
     }
 }
