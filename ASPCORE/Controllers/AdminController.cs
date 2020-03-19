@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace ASPCORE.Controllers
 {
+    [Route("painel/admin")]
     public class AdminController : Controller
-    {
-        public IActionResult Index()
+    {   
+        [HttpGet("principal/{numero:int?}/{nome}")]
+        public IActionResult Index(int numero, string nome)
         {
-            return Content("Olá Mundo  - School of Net");
+            return Content("O número é " + numero + " E o nome é " + nome);
         }
 
+        [HttpGet("son")]
         public IActionResult schoolOfNet()
         {
             return Content("Aprendendo ASP.NET Core na School of net!");
