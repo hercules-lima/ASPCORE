@@ -18,7 +18,8 @@ namespace ASPCORE.Controllers
         [HttpGet("son")]
         public IActionResult schoolOfNet()
         {
-            return Content("Aprendendo ASP.NET Core na School of net!");
+            var nome = Request.Query["nome"];
+            return Content("Aprendendo ASP.NET Core na School of net!" + nome);
         }
     }
 }
